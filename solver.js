@@ -9,6 +9,8 @@ function result(str) {
 
 function solve() {
 
+	$('#result_div').html(" ")
+
 	//if(keys.includes($('#key_input').val()) == false) {
 	//	alert("Chave errada! Veja se está escrito certo. Se não tiver uma chave você precisa comprar uma por 15k sonhos com o longhirar.")
 	//	return;
