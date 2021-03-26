@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>2 Degree Equation Solver</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="solver.js"></script>
+</head>
+<body>
+
+	<table>
+		<!--
+		<tr>
+			<td>
+				<h1></h1>
+			</td>
+			<td>
+				<input type="text" name="a" placeholder="Chave de acesso" id="key_input" class="input_normal" />
+			</td>
+		</tr>
+		-->
+		<tr>
+			<td>
+				<h1>A = </h1>
+			</td>
+			<td>
+				<input type="number" name="a" value="0" id="input_a" class="input_normal" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h1>B = </h1>
+			</td>
+			<td>
+				<input type="number" name="a" value="0" id="input_b" class="input_normal" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h1>C = </h1>
+			</td>
+			<td>
+				<input type="number" name="a" value="0" id="input_c" class="input_normal" />
+			</td>
+		</tr>
+	</table>
+
+	<a href="#result_div">
+	<button id="solve_button" onclick="solve()">Solve</button>
+	</a>
+
+
+	<div id="result_div">		
+	</div>
+
+	
+</body>
+</html>
