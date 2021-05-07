@@ -10,16 +10,20 @@ const isBeta = true
 if (isBeta){
 console.log('WARNING! THIS IS THE BETA VERSION!')
 console.log('Go to https://longhirar.github.io/2-degree-equation/ to use the stable version!')
-alert('WARNING! THIS IS THE BETA VERSION!\nGo to https://longhirar.github.io/2-degree-equation/ to use the stable version!')
+swal('WARNING! THIS IS THE BETA VERSION!\nGo to https://longhirar.github.io/2-degree-equation/ to use the stable version!')
 }
 
+result_div = document.createElement('div');
+result_div.id = "result-div";
+result_div.style = "text-align: left; font-family: 'Arial';";
+
 function result(str) {
-	$('#result_div').html( $('#result_div').html() + str + '<br>' )
+	result_div.innerHTML = ( result_div.innerHTML + str + '<br>' )
 }
 
 function solve() {
 
-	$('#result_div').html(" ")
+	result_div.innerHTML = " "
 
 	//if(keys.includes($('#key_input').val()) == false) {
 	//	alert("Chave errada! Veja se está escrito certo. Se não tiver uma chave você precisa comprar uma por 15k sonhos com o longhirar.")
@@ -78,5 +82,10 @@ function solve() {
 		}
 	result("<br>")
 	}
+
+
+	swal({
+		content: result_div
+	})
 }
 
